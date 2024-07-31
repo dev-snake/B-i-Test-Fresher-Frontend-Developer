@@ -53,8 +53,9 @@ export const CreateTodoForm = () => {
       />
 
       <button
-        type="button"
+        type="submit"
         disabled={isCreatingTodo}
+        className="rounded-full bg-gray-700 px-5 py-2 text-[14px] font-bold text-white"
         onClick={() => {
           createTodo({
             body: todoBody,
